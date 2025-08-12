@@ -12,6 +12,8 @@
 
 @theme inline {
   --primary: #f75531;
+  --secondary: #555555;
+  --medium-neutral: #2c2c2c;
 }
 
 body {

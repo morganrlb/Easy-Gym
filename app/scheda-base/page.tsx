@@ -40,23 +40,8 @@ const inclusions = [
 
 export default function SchedaBasePage() {
   return (
-    <div className="bg-black text-neutral-100 min-h-screen font-sans">
-      <header className="sticky top-0 z-50 bg-black/60 backdrop-blur">
-        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <Link href="/" className="text-3xl font-bold text-white flex items-center gap-2">
-            <Dumbbell className="text-orange-500" />
-            Easy<span className="text-orange-500">Gym</span>
-          </Link>
-          <nav className="space-x-4">
-            <Link href="/" className="text-white hover:text-orange-500 transition">Home</Link>
-            <a href="/#services" className="text-white hover:text-orange-500 transition">Pacchetti</a>
-            <Link href="/tips" className="text-white hover:text-orange-500 transition">Consigli</Link>
-            <a href="/#schedule" className="text-white hover:text-orange-500 transition">Contattami</a>
-          </nav>
-        </div>
-      </header>
-
-      <section className="hero bg-black py-20 text-center">
+    <div className="bg-black text-neutral-100 min-h-screen font-sans">      
+      <section className="hero bg-black mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-6 text-white">Scheda Base</h1>
           <p className="text-lg text-neutral-400 mb-8">
@@ -66,12 +51,12 @@ export default function SchedaBasePage() {
       </section>
 
       <section className="max-w-3xl mx-auto px-4 py-10">
-        <div className="grid gap-8 tips-list">
+        <div className="grid grid-cols-2 gap-8">
           {benefits.map((benefit) => {
             const IconComponent = benefit.icon;
             return (
               <div key={benefit.id} className="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 shadow">
-                <h3 className="flex items-center gap-2 text-orange-500 text-lg font-semibold mb-2">
+                <h3 className="flex items-center gap-2 text-[var(--primary)] text-lg font-semibold mb-2">
                   <IconComponent /> {benefit.title}
                 </h3>
                 <p className="text-neutral-300">
@@ -88,13 +73,13 @@ export default function SchedaBasePage() {
           <ul className="text-left max-w-md mx-auto mb-6 space-y-2">
             {inclusions.map((inclusion, index) => (
               <li key={index} className="flex items-center">
-                <Check className="text-orange-500 mr-2" size={16} />
+                <Check className="text-[var(--primary)] mr-2" size={16} />
                 {inclusion}
               </li>
             ))}
           </ul>
           <p className="price text-white text-3xl font-bold mb-4">24€</p>
-          <a href="https://forms.gle/your-base-form-link" target="_blank" className="primary-button bg-orange-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-orange-600 transition inline-block">Compila il Modulo<sup>*</sup></a>
+          <a href="https://forms.gle/your-base-form-link" target="_blank" className="primary-button bg-[var(--primary)] text-black font-semibold py-3 px-8 rounded-lg hover:text-white duration-200 transition inline-block">Compila il Modulo<sup>*</sup></a>
           <p className="text-neutral-400 text-sm mt-4"><sup>*</sup> Nessun obbligo di pagamento immediato. Il pagamento verrà richiesto via email dopo la compilazione del modulo.</p>
         </div>
       </section>

@@ -49,26 +49,9 @@ const inclusions = [
 export default function SchedaPersonalizzataPage() {
   return (
     <div className="bg-black text-neutral-100 min-h-screen font-sans">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-black/60 backdrop-blur">
-        <div className="container mx-auto px-4 py-6">
-          <nav className="flex justify-between items-center">
-            <Link href="/" className="flex items-center gap-2 text-white font-bold text-2xl">
-              <Dumbbell className="text-orange-500" />
-              Easy <span className="text-orange-500">Gym</span>
-            </Link>
-            <div className="nav-links flex gap-8 text-neutral-300 font-medium">
-              <Link href="/" className="hover:text-orange-500 transition">Home</Link>
-              <a href="/#services" className="hover:text-orange-500 transition">Pacchetti</a>
-              <Link href="/tips" className="hover:text-orange-500 transition">Consigli</Link>
-              <a href="/#schedule" className="hover:text-orange-500 transition">Contattami</a>
-            </div>
-          </nav>
-        </div>
-      </header>
 
       {/* Hero Section */}
-      <section className="hero bg-black py-20 text-center">
+      <section className="hero bg-black mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-6 text-white">
             Scheda Personalizzata
@@ -83,14 +66,13 @@ export default function SchedaPersonalizzataPage() {
         </div>
       </section>
 
-      {/* Content Section */}
       <section className="max-w-3xl mx-auto px-4 py-10">
-        <div className="grid gap-8 tips-list">
+        <div className="grid grid-cols-2 gap-8">
           {benefits.map((benefit) => {
             const IconComponent = benefit.icon;
             return (
               <div key={benefit.id} className="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 shadow">
-                <h3 className="flex items-center gap-2 text-orange-500 text-lg font-semibold mb-2">
+                <h3 className="flex items-center gap-2 text-[var(--primary)] text-lg font-semibold mb-2">
                   <IconComponent /> {benefit.title}
                 </h3>
                 <p className="text-neutral-300">
@@ -110,7 +92,7 @@ export default function SchedaPersonalizzataPage() {
           <ul className="text-left max-w-md mx-auto mb-6 space-y-2">
             {inclusions.map((inclusion, index) => (
               <li key={index} className="flex items-center">
-                <Check className="text-orange-500 mr-2" size={16} />
+                <Check className="text-[var(--primary)] mr-2" size={16} />
                 {inclusion}
               </li>
             ))}
@@ -119,7 +101,7 @@ export default function SchedaPersonalizzataPage() {
           <a
             href="https://forms.gle/fg74t4RAQsnmNyCGA"
             target="_blank"
-            className="primary-button bg-orange-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-orange-600 transition inline-block"
+            className="primary-button bg-[var(--primary)] text-black font-semibold py-3 px-8 rounded-lg hover:text-white duration-200 transition inline-block"
           >
             Compila il Modulo<sup>*</sup>
           </a>

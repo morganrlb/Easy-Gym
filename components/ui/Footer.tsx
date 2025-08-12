@@ -1,104 +1,110 @@
-import Link from 'next/link';
-import { Instagram, Music } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import { FaTiktok } from "react-icons/fa6";
+
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/_morganrealbuto_/",
+    label: "Instagram",
+    icon: Instagram
+  },
+  {
+    href: "https://www.tiktok.com/@_morganrealbuto_",
+    label: "TikTok", 
+    icon: FaTiktok
+  }
+];
+
+const usefulLinks = [
+  { href: "/", label: "Home" },
+  { href: "/#services", label: "Pacchetti" },
+  { href: "/#schedule", label: "Contattami" }
+];
+
+const services = [
+  { href: "/tips", label: "Consigli" },
+  { href: "#", label: "About" }
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white mt-20 py-12">
-      <div className="max-w-6xl mx-auto px-4 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="mt-20 bg-black py-12 text-white">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="font-bold text-lg mb-2 text-white">
+          <h3 className="mb-4 text-lg font-bold text-white">
             Easy <span className="text-[var(--primary)]">Gym</span>
           </h3>
-          <p className="text-neutral-400 mb-4">
+          <p className="mb-6 text-neutral-400">
             Servizi di coaching professionale per aiutarti a raggiungere il tuo
             pieno potenziale in palestra.
           </p>
-          <div className="flex gap-3 mt-2">
-            <a
-              href="https://www.instagram.com/_morganrealbuto_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="bg-neutral-900 border border-neutral-800 rounded-full p-2 hover:bg-[var(--primary)] hover:text-black transition"
-            >
-              <Instagram size={24} />
-            </a>
-            <a
-              href="https://www.tiktok.com/@_morganrealbuto_"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TikTok"
-              className="bg-neutral-900 border border-neutral-800 rounded-full p-2 hover:bg-[var(--primary)] hover:text-black transition"
-            >
-              <Music size={24} />
-            </a>
+          <div className="flex gap-3">
+            {socialLinks.map((social) => {
+              const IconComponent = social.icon;
+              return (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="rounded-full border border-neutral-800 bg-neutral-900 p-2 transition hover:bg-[var(--primary)] hover:text-black"
+                >
+                  <IconComponent size={18} />
+                </a>
+              );
+            })}
           </div>
         </div>
 
         <div>
-          <h3 className="font-bold text-lg mb-2 text-white">Link Utili</h3>
-          <ul className="space-y-2">
-            <li>
-              <Link href="/" className="text-neutral-400 hover:text-[var(--primary)] transition">
-                Home
-              </Link>
-            </li>
-            <li>
-              <a
-                href="/#services"
-                className="text-neutral-400 hover:text-[var(--primary)] transition"
-              >
-                Pacchetti
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#schedule"
-                className="text-neutral-400 hover:text-[var(--primary)] transition"
-              >
-                Contattami
-              </a>
-            </li>
+          <h3 className="mb-4 text-lg font-bold text-white">Link Utili</h3>
+          <ul className="space-y-3">
+            {usefulLinks.map((link) => (
+              <li key={link.label}>
+                <a 
+                  href={link.href} 
+                  className="text-neutral-400 transition hover:text-[var(--primary)]"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h3 className="font-bold text-lg mb-2 text-white">Servizi</h3>
-          <ul className="space-y-2">
-            <li>
-              <Link
-                href="/tips"
-                className="text-neutral-400 hover:text-[var(--primary)] transition"
-              >
-                Consigli
-              </Link>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-[var(--primary)] transition"
-              >
-                About
-              </a>
-            </li>
+          <h3 className="mb-4 text-lg font-bold text-white">Servizi</h3>
+          <ul className="space-y-3">
+            {services.map((service) => (
+              <li key={service.label}>
+                <a
+                  href={service.href}
+                  className="text-neutral-400 transition hover:text-[var(--primary)]"
+                >
+                  {service.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h3 className="font-bold text-lg mb-2 text-white">Contatti</h3>
-          <p className="text-neutral-400">Torino</p>
-          <p>
-            <a
-              href="mailto:morganrealbuto@gmail.com"
-              className="text-neutral-400 hover:text-[var(--primary)] transition"
-            >
-              morganrealbuto@gmail.com
-            </a>
-          </p>
+          <h3 className="mb-4 text-lg font-bold text-white">Contatti</h3>
+          <div className="space-y-2">
+            <p className="text-neutral-400">Torino</p>
+            <p>
+              <a
+                href="mailto:morganrealbuto@gmail.com"
+                className="text-neutral-400 transition hover:text-[var(--primary)]"
+              >
+                morganrealbuto@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="border-t border-neutral-800 mt-10 pt-6 text-center text-neutral-400">
+      <div className="mt-10 border-t border-neutral-800 pt-6 text-center text-neutral-400">
         <p>&copy; 2025 Easy Gym. Tutti i diritti riservati.</p>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import { FaDumbbell } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 bg-black/30 backdrop-blur">
+    <header className="sticky top-0 z-10 backdrop-blur">
       <div className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
           <a href="/" className="flex items-center gap-2 text-white font-bold text-2xl">
