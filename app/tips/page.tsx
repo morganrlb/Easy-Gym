@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LiquidGlassButton } from "../../components/ui/liquid-glass-button";
 import { Dumbbell, Utensils, Bed, RotateCcw, TrendingUp } from "lucide-react";
 
 const tips = [
@@ -84,12 +85,9 @@ export default function TipsPage() {
 						Acquista una scheda adatta al tuo livello o prenota una consulenza
 						con me per avere un piano su misura.
 					</p>
-					<Link
-						href="/#services"
-						className="bg-[var(--primary)] text-black font-semibold py-3 px-8 rounded-lg hover:text-white duration-200 transition inline-block"
-					>
+					<LiquidGlassButton href="/#services" variant="primary">
 						Scopri i Pacchetti
-					</Link>
+					</LiquidGlassButton>
 				</div>
 			</main>
 		</div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FlipWords } from '../components/ui/flip-words';
+import { LiquidGlassButton } from './ui/liquid-glass-button';
 
 export default function Hero() {
    return (
@@ -13,13 +14,13 @@ export default function Hero() {
                    le mie schede di allenamento oppure richiedere una consulenza personalizzata con me. Avrai la possibilità
                   di ricevere una scheda su misura, che potrà essere adattata e aggiornata nel tempo in base ai tuoi progressi.
                </p>
-               <div className="hero-buttons flex gap-5 justify-center *:hover:-translate-y-1 *:hover:text-white *:duration-200">
-                  <a href="#services" className="bg-[var(--primary)] text-black font-semibold rounded-2xl px-8 py-4">
+               <div className="hero-buttons flex gap-5 justify-center">
+                  <LiquidGlassButton href="#services" variant="primary">
                      Vedi i pacchetti
-                  </a>
-                  <a href="#schedule" className="border-2 border-[var(--primary)] text-[var(--primary)] font-semibold rounded-2xl px-8 py-4 hover:bg-[var(--primary)]">
+                  </LiquidGlassButton>
+                  <LiquidGlassButton href="#schedule" variant="secondary">
                      Contattami
-                  </a>
+                  </LiquidGlassButton>
                </div>
             </div>
          </section>

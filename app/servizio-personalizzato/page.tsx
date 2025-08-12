@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LiquidGlassButton } from "../../components/ui/liquid-glass-button";
 import { ClipboardCheck, MessageCircle, RefreshCw, TrendingUp, BookOpen, Utensils, Check, Dumbbell } from "lucide-react";
 
 // Dati dei servizi per evitare ripetizioni
@@ -99,13 +100,13 @@ export default function ServizioPersonalizzatoPage() {
             ))}
           </ul>
           <p className="price text-white text-3xl font-bold mb-4">49€</p>
-          <a
+          <LiquidGlassButton
             href="https://forms.gle/d1mjhvwUostCJjS98"
             target="_blank"
-            className="primary-button bg-[var(--primary)] text-black font-semibold py-3 px-8 rounded-lg hover:text-white duration-200 transition inline-block"
+            variant="primary"
           >
             Compila il Modulo<sup>*</sup>
-          </a>
+          </LiquidGlassButton>
           <p className="text-neutral-400 text-sm mt-4">
             <sup>*</sup> Nessun obbligo di pagamento immediato. Il pagamento verrà
             richiesto via email dopo la compilazione del modulo.

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { LiquidGlassButton } from './ui/liquid-glass-button';
 import image1 from '@/public/image1.webp';
 import image2 from '@/public/image2.webp';
 import image3 from '@/public/image3.webp';
@@ -56,9 +57,9 @@ export default function Services() {
                         {service.description}
                      </p>
                      <span className="text-[var(--primary)] font-bold text-2xl">{service.price}</span>
-                     <a href={service.href} className="block bg-neutral-800 text-white font-semibold rounded-xl text-center px-4 py-3 hover:bg-[var(--primary)] hover:text-black duration-200">
+                     <LiquidGlassButton href={service.href} variant="primary">
                         Scopri di più
-                     </a>
+                     </LiquidGlassButton>
                   </div>
                </div>
             ))}

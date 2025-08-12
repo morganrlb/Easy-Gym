@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LiquidGlassButton } from "../../components/ui/liquid-glass-button";
 import { BarChart3, BookOpen, Utensils, Check, Dumbbell } from "lucide-react";
 
 
@@ -79,7 +80,13 @@ export default function SchedaBasePage() {
             ))}
           </ul>
           <p className="price text-white text-3xl font-bold mb-4">24€</p>
-          <a href="https://forms.gle/your-base-form-link" target="_blank" className="primary-button bg-[var(--primary)] text-black font-semibold py-3 px-8 rounded-lg hover:text-white duration-200 transition inline-block">Compila il Modulo<sup>*</sup></a>
+          <LiquidGlassButton 
+            href="https://forms.gle/your-base-form-link" 
+            target="_blank" 
+            variant="primary"
+          >
+            Compila il Modulo<sup>*</sup>
+          </LiquidGlassButton>
           <p className="text-neutral-400 text-sm mt-4"><sup>*</sup> Nessun obbligo di pagamento immediato. Il pagamento verrà richiesto via email dopo la compilazione del modulo.</p>
         </div>
       </section>
