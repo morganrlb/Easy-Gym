@@ -1,9 +1,12 @@
+import React from "react";
+import { FlipWords } from '../components/ui/flip-words';
+
 export default function Hero() {
    return (
          <section className="relative text-center mt-30 mb-40">
             <div className="container mx-auto">
                <h1 className="text-5xl font-bold mb-6">
-                  La Tua Guida al <span className='text-[var(--primary)]'>Bodybuilding</span>
+                     La Tua Guida <FlipWords words={["al Bodybuilding", "Facile"]} />
                </h1>
                <p className="text-xl text-neutral-300 mb-8 max-w-3xl mx-auto">
                   Benvenuto sul mio sito! Sono Morgan, un bodybuilder professionista. Su questo sito potrai acquistare
