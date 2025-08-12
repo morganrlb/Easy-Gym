@@ -4,6 +4,7 @@ import { ReactLenis, useLenis } from 'lenis/react'
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import { NavTransition } from "@/components/animations/NavTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ReactLenis root />
-        <Header />
-        {children}
-        <Footer />
+        <NavTransition>
+          <Header />
+        </NavTransition>
+          {children}
+          <Footer />
       </body>
     </html>
   );
