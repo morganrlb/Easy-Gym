@@ -9,6 +9,7 @@ interface LiquidGlassButtonProps {
   variant?: "primary" | "secondary";
   className?: string;
   target?: string;
+  type?: "submit";
 }
 
 export const LiquidGlassButton = ({
@@ -18,18 +19,15 @@ export const LiquidGlassButton = ({
   variant = "primary",
   className = "",
   target,
+  type,
 }: LiquidGlassButtonProps) => {
   const isPrimary = variant === "primary";
   
-  const baseClasses = `
-    relative overflow-hidden rounded-xl px-6 py-3 font-semibold text-center
-    backdrop-blur-lg border transition-all duration-300
-    group cursor-pointer inline-block
-  `;
+  const baseClasses = `relative overflow-hidden rounded-xl px-6 py-3 font-semibold text-center backdrop-blur-lg border duration-300 cursor-pointer inline-block hover:text-white`;
   
   const variantClasses = isPrimary
-    ? "bg-[var(--primary)]/20 border-[var(--primary)]/30 text-[var(--primary)] hover:bg-[var(--primary)]/30 hover:border-[var(--primary)]/50"
-    : "bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30";
+    ? "bg-[var(--primary)]/20 border-[var(--primary)]/30 text-[var(--primary)] hover:bg-[var(--primary)]/30 hover:border-[var(--primary)]/60"
+    : "bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/60";
 
   const Component = href ? "a" : "button";
 
@@ -38,6 +36,7 @@ export const LiquidGlassButton = ({
       href={href}
       onClick={onClick}
       target={target}
+      type={type}
       className={`${baseClasses} ${variantClasses} ${className}`}
     >
       {/* Glass reflection effect */}
@@ -60,7 +59,7 @@ export const LiquidGlassButton = ({
       
       {/* Border glow effect */}
       <motion.div
-        className={`absolute inset-0 rounded-xl border-2 ${
+        className={`absolute inset-0 rounded-[10px] border-2 ${
           isPrimary ? "border-[var(--primary)]" : "border-white"
         }`}
         initial={{ opacity: 0 }}
@@ -69,7 +68,7 @@ export const LiquidGlassButton = ({
       />
       
       {/* Content */}
-      <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+      <span className="relative -z-5 transition-colors duration-300">
         {children}
       </span>
     </Component>
