@@ -10,6 +10,7 @@ interface LiquidGlassButtonProps {
   className?: string;
   target?: string;
   type?: "submit";
+  disabled?: boolean;
 }
 
 export const LiquidGlassButton = ({
@@ -20,6 +21,7 @@ export const LiquidGlassButton = ({
   className = "",
   target,
   type,
+  disabled
 }: LiquidGlassButtonProps) => {
   const isPrimary = variant === "primary";
   
@@ -37,6 +39,7 @@ export const LiquidGlassButton = ({
       onClick={onClick}
       target={target}
       type={type}
+      disabled={disabled}
       className={`${baseClasses} ${variantClasses} ${className}`}
     >
       {/* Glass reflection effect */}
