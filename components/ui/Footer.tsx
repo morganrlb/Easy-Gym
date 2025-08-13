@@ -16,13 +16,14 @@ const socialLinks = [
 
 const usefulLinks = [
   { href: "/", label: "Home" },
-  { href: "/#services", label: "Pacchetti" },
-  { href: "/#schedule", label: "Contattami" }
+  { href: "/corso-bodybuilding", label: "Corso Completo" },
+  { href: "/#services", label: "Schede" },
+  { href: "/tips", label: "Consigli" }
 ];
 
 const services = [
-  { href: "/tips", label: "Consigli" },
-  { href: "#", label: "About" }
+  { href: "/#schedule", label: "Contattami" },
+  { href: "/about", label: "About" }
 ];
 
 export default function Footer() {

@@ -11,9 +11,9 @@ export default function Header() {
           </a>
           <div className="nav-links flex gap-8 text-neutral-300 font-semibold *:hover:text-[var(--primary)] *:duration-200">
             <a href="/">Home</a>
-            <a href="/#services">Pacchetti</a>
+            <a href="/#services">Schede</a>
+            <a href="/corso-bodybuilding">Corso Bodybuilding</a>
             <a href="/tips">Consigli</a>
-            <a href="/#schedule">Contattami</a>
           </div>
         </nav>
       </div>

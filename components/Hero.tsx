@@ -15,11 +15,11 @@ export default function Hero() {
                   di te stesso inizia qui.
                </p>
                <div className="hero-buttons flex gap-5 justify-center">
-                  <LiquidGlassButton href="#services" variant="primary">
-                     Vedi i pacchetti
+                  <LiquidGlassButton href="/corso-bodybuilding" variant="primary">
+                     Corso Completo
                   </LiquidGlassButton>
-                  <LiquidGlassButton href="#schedule" variant="secondary">
-                     Contattami
+                  <LiquidGlassButton href="/#services" variant="secondary">
+                     Vedi le schede
                   </LiquidGlassButton>
                </div>
             </div>
