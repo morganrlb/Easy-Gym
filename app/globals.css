@@ -16,6 +16,10 @@
   --medium-neutral: #2c2c2c;
 }
 
+html {
+  scrollbar-width: none;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);

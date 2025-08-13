@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ReactLenis, useLenis } from 'lenis/react'
+import { ReactLenis } from 'lenis/react'
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import { NavTransition } from "@/components/animations/NavTransition";
+import OpenTransition from '@/components/animations/OpenTransition'
+import { Spotlight } from '../components/ui/spotlight-new';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +32,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <NavTransition>
           <Header />
         </NavTransition>
-          {children}
+        <Spotlight />
+          <OpenTransition>
+            {children}
+          </OpenTransition>
           <Footer />
       </body>
     </html>
