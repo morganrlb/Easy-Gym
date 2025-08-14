@@ -43,9 +43,9 @@ export default function CourseSection() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <LiquidGlassButton href="/corso-bodybuilding" variant="primary" >
+                <LiquidGlassButton href="/corso-bodybuilding" variant="primary">
                   Scopri il Corso
-                  <ArrowRight size={16} />
+                  <ArrowRight size={16} strokeWidth={3} className='inline-block ml-2' />
                 </LiquidGlassButton>
                 <div className="flex items-center gap-2">
                   <span className="text-neutral-500 line-through">149€</span>
