@@ -11,7 +11,7 @@ const privacyPoints = [
     id: 'utilizzo',
     icon: FileText,
     title: 'Utilizzo delle Informazioni',
-    description: 'I tuoi dati vengono utilizzati esclusivamente per creare schede personalizzate e fornire supporto via Telegram.'
+    description: 'I tuoi dati vengono utilizzati esclusivamente per creare schede personalizzate e fornire supporto via email quando necessario.'
   },
   {
     id: 'protezione',
@@ -41,10 +41,10 @@ const privacyPoints = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-black text-neutral-100 min-h-screen font-sans">
+    <div className="text-neutral-100 min-h-screen font-sans">
       
       {/* Hero Section */}
-      <section className="hero bg-black mt-20 mb-10 text-center">
+      <section className="hero mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-6 text-white">
             Privacy e Trasparenza

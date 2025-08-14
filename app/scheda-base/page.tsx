@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { LiquidGlassButton } from "../../components/ui/liquid-glass-button";
 import { BarChart3, BookOpen, Utensils, Check, Dumbbell } from "lucide-react";
 
@@ -41,8 +40,8 @@ const inclusions = [
 
 export default function SchedaBasePage() {
   return (
-    <div className="bg-black text-neutral-100 min-h-screen font-sans">      
-      <section className="hero bg-black mt-20 mb-10 text-center">
+    <div className="text-neutral-100 min-h-screen font-sans">      
+      <section className="hero mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-6 text-white">Scheda Base</h1>
           <p className="text-lg text-neutral-400 mb-8">

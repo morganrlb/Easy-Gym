@@ -1,5 +1,5 @@
 import { LiquidGlassButton } from './ui/liquid-glass-button';
-import { BookOpen, Trophy, Users, Star, ArrowRight, FileText, Clock } from 'lucide-react';
+import { BookOpen, Trophy, Users, Star, ArrowRight, FileText, Clock, Download } from 'lucide-react';
 
 export default function CourseSection() {
   return (
@@ -37,8 +37,8 @@ export default function CourseSection() {
                   <span>1500+ min</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-neutral-400">
-                  <Star size={16} className="text-yellow-500" />
-                  <span>Certificato incluso</span>
+                  <Download size={16} />
+                  <span>Download immediato</span>
                 </div>
               </div>
               
@@ -68,21 +68,21 @@ export default function CourseSection() {
               
               <div className="bg-black/30 rounded-2xl p-6 border border-neutral-800">
                 <div className="flex items-center gap-3 mb-2">
-                  <Users className="text-[var(--primary)]" size={20} />
-                  <h3 className="text-white font-semibold">Supporto Telegram</h3>
+                  <FileText className="text-[var(--primary)]" size={20} />
+                  <h3 className="text-white font-semibold">Materiale Scaricabile</h3>
                 </div>
                 <p className="text-neutral-400 text-sm">
-                  Accesso al gruppo privato per domande e supporto continuo
+                  PDF completi e materiali didattici sempre disponibili per te
                 </p>
               </div>
               
               <div className="bg-black/30 rounded-2xl p-6 border border-neutral-800">
                 <div className="flex items-center gap-3 mb-2">
-                  <Trophy className="text-[var(--primary)]" size={20} />
-                  <h3 className="text-white font-semibold">Certificato Professionale</h3>
+                  <Star className="text-[var(--primary)]" size={20} />
+                  <h3 className="text-white font-semibold">Accesso a Vita</h3>
                 </div>
                 <p className="text-neutral-400 text-sm">
-                  Certificato di completamento e materiali sempre aggiornati
+                  Paga una volta e mantieni l'accesso per sempre, senza costi nascosti
                 </p>
               </div>
             </div>

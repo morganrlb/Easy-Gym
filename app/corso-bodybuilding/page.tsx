@@ -1,5 +1,5 @@
 import { LiquidGlassButton } from "../../components/ui/liquid-glass-button";
-import { BookOpen, Target, Brain, Trophy, Users, Star, Check, Download, FileText, Lightbulb, Utensils, Dumbbell, Zap, Shield } from "lucide-react";
+import { BookOpen, Target, Brain, Trophy, Star, Download, FileText, Utensils, Dumbbell, Zap, Shield } from "lucide-react";
 
 const courseModules = [
 	{
@@ -66,7 +66,7 @@ const courseModules = [
 
 export default function CorsoBodybuildingPage() {
 	return (
-		<div className="bg-black text-neutral-100 min-h-screen font-sans">
+		<div className="text-neutral-100 min-h-screen font-sans">
 			{/* Hero Section */}
 			<section className="max-w-4xl mx-auto px-4 pt-32 pb-20 text-center">
 				<div className="inline-flex items-center gap-2 bg-neutral-900 border border-neutral-800 rounded-full px-4 py-2 mb-6">
@@ -121,8 +121,8 @@ export default function CorsoBodybuildingPage() {
 						{[
 							{ icon: BookOpen, title: "10 Moduli", desc: "Contenuti specializzati" },
 							{ icon: FileText, title: "PDF Completi", desc: "Materiale scaricabile" },
-							{ icon: Users, title: "Supporto", desc: "Gruppo Telegram" },
-							{ icon: Trophy, title: "Certificato", desc: "Attestato incluso" }
+							{ icon: Download, title: "Accesso Immediato", desc: "Download istantaneo" },
+							{ icon: Star, title: "Accesso a Vita", desc: "Paga una volta, tuo per sempre" }
 						].map((item, index) => {
 							const IconComponent = item.icon;
 							return (
@@ -197,12 +197,12 @@ export default function CorsoBodybuildingPage() {
 								<span>Accesso immediato</span>
 							</div>
 							<div className="flex items-center gap-1">
-								<Users size={16} />
-								<span>Supporto incluso</span>
+								<Download size={16} />
+								<span>Download completo</span>
 							</div>
 							<div className="flex items-center gap-1">
-								<Trophy size={16} />
-								<span>Certificato incluso</span>
+								<Star size={16} />
+								<span>Accesso a vita</span>
 							</div>
 						</div>
 					</div>

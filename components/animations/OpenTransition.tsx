@@ -5,18 +5,21 @@ export default function OpenTransition({ children }: { children: React.ReactNode
   return (
     <motion.main
       initial={{ 
-        opacity: 0, 
-        filter: 'blur(10px)',
-        scale: 0.95
+        y: 30,
+        filter: "blur(10px)",
+        opacity: 0
       }}
       animate={{ 
-        opacity: 1, 
-        filter: 'blur(0px)',
-        scale: 1
+        y: 0,
+        filter: "blur(0)",
+        opacity: 1
       }}
       transition={{ 
-        duration: 1.2,
+        duration: 0.8,
         ease: "easeOut"
+      }}
+      style={{
+        willChange: 'transform, opacity, filter'
       }}
     >
         {children}

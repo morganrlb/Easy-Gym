@@ -42,10 +42,10 @@ const tips = [
 
 export default function TipsPage() {
 	return (
-		<div className="bg-black text-neutral-100 min-h-screen font-sans">
+		<div className="text-neutral-100 min-h-screen font-sans">
 
 			{/* Hero Section */}
-			<section className="hero bg-black mt-20 mb-10 text-center">
+			<section className="hero mt-20 mb-10 text-center">
 				<div className="max-w-3xl mx-auto px-4">
 					<h1 className="text-4xl font-bold mb-6 text-white">
 						Consigli sul Bodybuilding

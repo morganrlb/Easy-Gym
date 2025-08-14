@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { LiquidGlassButton } from "../../components/ui/liquid-glass-button";
 import { ClipboardCheck, MessageCircle, RefreshCw, TrendingUp, BookOpen, Utensils, Check, Dumbbell } from "lucide-react";
 
@@ -54,9 +53,9 @@ const benefits = [
 
 export default function ServizioPersonalizzatoPage() {
   return (
-    <div className="bg-black text-neutral-100 min-h-screen font-sans">
+    <div className="text-neutral-100 min-h-screen font-sans">
 
-      <section className="hero bg-black mt-20 mb-10 text-center">
+      <section className="hero mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-6 text-white">
             Servizio Personalizzato 4 Settimane

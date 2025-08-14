@@ -35,8 +35,13 @@ export const Spotlight = ({
       }}
       transition={{
         duration: 1.5,
+        delay: 0.5
       }}
-      className="pointer-events-none absolute inset-0 h-full w-full overflow-hidden"
+      className="pointer-events-none fixed inset-0 h-full w-full overflow-hidden"
+      style={{
+        willChange: 'opacity',
+        zIndex: 1
+      }}
     >
       <motion.div
         animate={{
@@ -48,34 +53,40 @@ export const Spotlight = ({
           repeatType: "reverse",
           ease: "easeInOut",
         }}
-        className="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
+        className="absolute top-0 left-0 w-screen h-screen pointer-events-none"
+        style={{
+          willChange: 'transform'
+        }}
       >
         <div
           style={{
-            transform: `translateY(${translateY}px) rotate(-45deg)`,
+            transform: `translate3d(0, ${translateY}px, 0) rotate(-45deg)`,
             background: gradientFirst,
             width: `${width}px`,
             height: `${height}px`,
+            willChange: 'transform'
           }}
           className={`absolute top-0 left-0`}
         />
 
         <div
           style={{
-            transform: "rotate(-45deg) translate(5%, -50%)",
+            transform: "rotate(-45deg) translate3d(5%, -50%, 0)",
             background: gradientSecond,
             width: `${smallWidth}px`,
             height: `${height}px`,
+            willChange: 'transform'
           }}
           className={`absolute top-0 left-0 origin-top-left`}
         />
 
         <div
           style={{
-            transform: "rotate(-45deg) translate(-180%, -70%)",
+            transform: "rotate(-45deg) translate3d(-180%, -70%, 0)",
             background: gradientThird,
             width: `${smallWidth}px`,
             height: `${height}px`,
+            willChange: 'transform'
           }}
           className={`absolute top-0 left-0 origin-top-left`}
         />
@@ -91,34 +102,40 @@ export const Spotlight = ({
           repeatType: "reverse",
           ease: "easeInOut",
         }}
-        className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
+        className="absolute top-0 right-0 w-screen h-screen pointer-events-none"
+        style={{
+          willChange: 'transform'
+        }}
       >
         <div
           style={{
-            transform: `translateY(${translateY}px) rotate(45deg)`,
+            transform: `translate3d(0, ${translateY}px, 0) rotate(45deg)`,
             background: gradientFirst,
             width: `${width}px`,
             height: `${height}px`,
+            willChange: 'transform'
           }}
           className={`absolute top-0 right-0`}
         />
 
         <div
           style={{
-            transform: "rotate(45deg) translate(-5%, -50%)",
+            transform: "rotate(45deg) translate3d(-5%, -50%, 0)",
             background: gradientSecond,
             width: `${smallWidth}px`,
             height: `${height}px`,
+            willChange: 'transform'
           }}
           className={`absolute top-0 right-0 origin-top-right`}
         />
 
         <div
           style={{
-            transform: "rotate(45deg) translate(180%, -70%)",
+            transform: "rotate(45deg) translate3d(180%, -70%, 0)",
             background: gradientThird,
             width: `${smallWidth}px`,
             height: `${height}px`,
+            willChange: 'transform'
           }}
           className={`absolute top-0 right-0 origin-top-right`}
         />
