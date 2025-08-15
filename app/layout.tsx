@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Easy-Gym",
+  title: "Easy Gym",
   description: "La tua guida al Bodybuilding | Schede personalizzate",
   keywords: ["Bodybuilding", "Fitness", "Allenamento", "Schede Personalizzate", "Corso Bodybuilding"],
 };
