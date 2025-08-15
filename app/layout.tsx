@@ -7,6 +7,7 @@ import Footer from "@/components/ui/Footer";
 import { NavTransition } from "@/components/animations/NavTransition";
 import OpenTransition from '@/components/animations/OpenTransition'
 import { Spotlight } from '../components/ui/spotlight-new';
+import { Analytics } from "@vercel/analytics/next"
 
 
 const geistSans = Geist({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Analytics />
         <ReactLenis root />
         <NavTransition>
           <Header />
