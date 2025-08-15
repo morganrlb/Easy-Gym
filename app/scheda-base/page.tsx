@@ -43,8 +43,8 @@ export default function SchedaBasePage() {
     <div className="text-neutral-100 min-h-screen font-sans">      
       <section className="hero mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-6 text-white">Scheda Base</h1>
-          <p className="text-lg text-neutral-400 mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Scheda Base</h1>
+          <p className="text-base md:text-lg text-neutral-400 mb-8">
             Inizia il tuo percorso nel bodybuilding con una scheda semplice ma efficace, pensata per chi muove i primi passi in palestra o vuole riprendere dopo una lunga pausa
           </p>
         </div>
@@ -68,8 +68,8 @@ export default function SchedaBasePage() {
         </div>
 
         <div className="cta-section bg-neutral-900 rounded-2xl border border-neutral-800 mt-16 p-10 text-center shadow">
-          <h2 className="text-2xl font-bold mb-4 text-white">Pronto per iniziare?</h2>
-          <p className="text-neutral-300 mb-4">La scheda base include:</p>
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">Pronto per iniziare?</h2>
+          <p className="text-sm md:text-base text-neutral-300 mb-4">La scheda base include:</p>
           <ul className="text-left max-w-md mx-auto mb-6 space-y-2">
             {inclusions.map((inclusion, index) => (
               <li key={index} className="flex items-center">

@@ -35,7 +35,7 @@ export default function Services() {
    return (
       <section id="services" className="max-w-6xl mx-auto mb-40 px-4 md:px-0">
          <div className="text-center mb-12">
-            <h2 className="text-[40px] font-bold mb-4 text-white">
+            <h2 className="text-3xl md:text-[40px] font-bold mb-4 text-white">
                I Miei Servizi di Coaching
             </h2>
             <p className="text-neutral-300 max-w-2xl mx-auto">

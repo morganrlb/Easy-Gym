@@ -53,12 +53,12 @@ export default function SchedaPersonalizzataPage() {
       {/* Hero Section */}
       <section className="hero mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-6 text-white">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Scheda Personalizzata
           </h1>
-          <p className="text-lg text-neutral-400 mb-8">
+          <p className="text-base md:text-lg text-neutral-400 mb-8">
             Ottieni un programma di allenamento su misura creato specificamente per
-            te e i tuoi obiettivi. Che tu sia all’inizio del tuo percorso o già
+            te e i tuoi obiettivi. Che tu sia all'inizio del tuo percorso o già
             esperto in sala pesi, una scheda personalizzata ti permette di
             massimizzare i risultati rispettando le tue esigenze, i tuoi obiettivi
             e la tua disponibilità settimanale.
@@ -85,10 +85,10 @@ export default function SchedaPersonalizzataPage() {
 
         {/* Call to Action Section */}
         <div className="cta-section bg-neutral-900 rounded-2xl border border-neutral-800 mt-16 p-10 text-center shadow">
-          <h2 className="text-2xl font-bold mb-4 text-white">
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">
             Pronto per iniziare?
           </h2>
-          <p className="text-neutral-300 mb-4">La scheda personalizzata include:</p>
+          <p className="text-sm md:text-base text-neutral-300 mb-4">La scheda personalizzata include:</p>
           <ul className="text-left max-w-md mx-auto mb-6 space-y-2">
             {inclusions.map((inclusion, index) => (
               <li key={index} className="flex items-center">

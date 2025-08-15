@@ -47,10 +47,10 @@ export default function TipsPage() {
 			{/* Hero Section */}
 			<section className="hero mt-20 mb-10 text-center">
 				<div className="max-w-3xl mx-auto px-4">
-					<h1 className="text-4xl font-bold mb-6 text-white">
+					<h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">
 						Consigli sul Bodybuilding
 					</h1>
-					<p className="text-lg text-neutral-400 mb-8">
+					<p className="text-base md:text-lg text-neutral-400 mb-8">
 						Scopri gli errori più comuni che molti principianti (e non solo)
 						commettono e come evitarli per ottenere risultati reali.
 					</p>
@@ -78,10 +78,10 @@ export default function TipsPage() {
 
 				{/* CTA Section */}
 				<div className="bg-neutral-900 rounded-2xl border border-neutral-800 mt-16 p-10 text-center shadow">
-					<h2 className="text-2xl font-bold mb-4 text-white">
+					<h2 className="text-xl md:text-2xl font-bold mb-4 text-white">
 						Vuoi una guida personalizzata per evitare questi errori?
 					</h2>
-					<p className="text-neutral-300 mb-6">
+					<p className="text-sm md:text-base text-neutral-300 mb-6">
 						 Approfondisci con il nostro corso completo di bodybuilding o
 						 acquista una scheda adatta al tuo livello.
 					</p>

@@ -73,11 +73,11 @@ export default function CorsoBodybuildingPage() {
 					<Trophy size={16} className="text-[var(--primary)]" />
 					<span className="text-[var(--primary)] text-sm font-medium">Corso Professionale</span>
 				</div>
-				<h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+				<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
 					Corso Completo di{" "}
 					<span className="text-[var(--primary)]">Bodybuilding</span>
 				</h1>
-				<p className="text-xl text-neutral-300 mb-8 max-w-3xl mx-auto">
+				<p className="text-lg md:text-xl text-neutral-300 mb-8 max-w-3xl mx-auto">
 					Il corso più completo per diventare un esperto di bodybuilding. 
 					10 moduli specializzati, risorse pratiche con esempi e materiale scaricabile.
 				</p>
@@ -111,8 +111,8 @@ export default function CorsoBodybuildingPage() {
 			{/* Programma del Corso - Sezione unificata */}
 			<section id="dettagli" className="max-w-6xl mx-auto px-4 py-20">
 				<div className="text-center mb-12">
-					<h2 className="text-3xl font-bold mb-4 text-white">Programma del Corso</h2>
-					<p className="text-neutral-300 max-w-2xl mx-auto mb-8">
+					<h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Programma del Corso</h2>
+					<p className="text-sm md:text-base text-neutral-300 max-w-2xl mx-auto mb-8">
 						Un percorso strutturato che ti guiderà passo dopo passo verso l'eccellenza nel bodybuilding
 					</p>
 					
@@ -165,10 +165,10 @@ export default function CorsoBodybuildingPage() {
 
 			{/* CTA Final */}
 			<section id="acquista" className="max-w-4xl mx-auto px-4 py-20 text-center">
-				<h2 className="text-4xl font-bold mb-6 text-white">
+				<h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
 					Diventa un Esperto di Bodybuilding
 				</h2>
-				<p className="text-xl text-neutral-300 mb-12">
+				<p className="text-lg md:text-xl text-neutral-300 mb-12">
 					Accedi oggi stesso al corso più completo mai creato in italiano sul bodybuilding. 
 					La tua formazione professionale inizia qui.
 				</p>

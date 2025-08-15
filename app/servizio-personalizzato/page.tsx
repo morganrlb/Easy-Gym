@@ -57,10 +57,10 @@ export default function ServizioPersonalizzatoPage() {
 
       <section className="hero mt-20 mb-10 text-center">
         <div className="max-w-3xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-6 text-white">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Servizio Personalizzato 4 Settimane
           </h1>
-          <p className="text-lg text-neutral-400 mb-8">
+          <p className="text-base md:text-lg text-neutral-400 mb-8">
             Il pacchetto completo per chi vuole risultati reali con supporto
             costante e personalizzazione al 100%
           </p>
@@ -87,7 +87,7 @@ export default function ServizioPersonalizzatoPage() {
 
         {/* Call to Action Section */}
         <div className="cta-section bg-neutral-900 rounded-2xl border border-neutral-800 mt-16 p-10 text-center shadow">
-          <h2 className="text-2xl font-bold mb-4 text-white">
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">
             Inizia Ora il Tuo Percorso Personalizzato
           </h2>
           <ul className="text-left max-w-md mx-auto mb-6 space-y-2">

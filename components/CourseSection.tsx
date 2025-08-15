@@ -18,11 +18,11 @@ export default function CourseSection() {
                 <span className="text-[var(--primary)] text-sm font-medium">Corso Professionale</span>
               </div>
               
-              <h2 className="text-4xl font-bold mb-4 text-white">
-                Corso Completo di <span className="text-[var(--primary)]">Bodybuilding</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+                 Corso Completo di <span className="text-[var(--primary)]">Bodybuilding</span>
               </h2>
               
-              <p className="text-neutral-300 mb-6 text-lg">
+              <p className="text-neutral-300 mb-6 text-base md:text-lg">
                 Una formazione professionale completa per trasformare la tua passione in competenza. 
                 10 moduli specializzati che coprono ogni aspetto del bodybuilding moderno.
               </p>
