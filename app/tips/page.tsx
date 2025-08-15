@@ -82,12 +82,17 @@ export default function TipsPage() {
 						Vuoi una guida personalizzata per evitare questi errori?
 					</h2>
 					<p className="text-neutral-300 mb-6">
-						Acquista una scheda adatta al tuo livello o prenota una consulenza
-						con me per avere un piano su misura.
+						 Approfondisci con il nostro corso completo di bodybuilding o
+						 acquista una scheda adatta al tuo livello.
 					</p>
-					<LiquidGlassButton href="/#services" variant="primary">
-						Scopri i Pacchetti
-					</LiquidGlassButton>
+					<div className="flex flex-col sm:flex-row gap-4 justify-center">
+						<LiquidGlassButton href="/corso-bodybuilding" variant="primary">
+							Corso Bodybuilding
+						</LiquidGlassButton>
+						<LiquidGlassButton href="/#services" variant="secondary">
+							Scopri le Schede
+						</LiquidGlassButton>
+					</div>
 				</div>
 			</main>
 		</div>

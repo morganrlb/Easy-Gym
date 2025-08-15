@@ -23,8 +23,8 @@ export default function CourseSection() {
               </h2>
               
               <p className="text-neutral-300 mb-6 text-lg">
-                Il corso più completo in italiano: 10 moduli specializzati, oltre 25 ore di contenuti 
-                e tutto quello che serve per diventare un esperto.
+                Una formazione professionale completa per trasformare la tua passione in competenza. 
+                10 moduli specializzati che coprono ogni aspetto del bodybuilding moderno.
               </p>
               
               <div className="flex items-center gap-6 mb-8">

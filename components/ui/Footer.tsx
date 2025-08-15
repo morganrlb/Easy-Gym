@@ -48,7 +48,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="rounded-full border border-neutral-800 bg-neutral-900 p-2 transition hover:bg-[var(--primary)] hover:text-black"
+                  className="rounded-full border border-neutral-800 bg-neutral-900 p-2 transition hover:bg-[var(--primary)] hover:text-black transition-color duration-200"
                 >
                   <IconComponent size={18} />
                 </a>
@@ -64,7 +64,7 @@ export default function Footer() {
               <li key={link.label}>
                 <a 
                   href={link.href} 
-                  className="text-neutral-400 transition hover:text-[var(--primary)]"
+                  className="text-neutral-400 transition hover:text-[var(--primary)] *:duration-200"
                 >
                   {link.label}
                 </a>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li key={service.label}>
                 <a
                   href={service.href}
-                  className="text-neutral-400 transition hover:text-[var(--primary)]"
+                  className="text-neutral-400 transition hover:text-[var(--primary)] transition-color duration-200"
                 >
                   {service.label}
                 </a>
@@ -96,7 +96,7 @@ export default function Footer() {
             <p>
               <a
                 href="mailto:morganrealbuto@gmail.com"
-                className="text-neutral-400 transition hover:text-[var(--primary)]"
+                className="text-neutral-400 transition hover:text-[var(--primary)] transition-color duration-200"
               >
                 morganrealbuto@gmail.com
               </a>

@@ -78,8 +78,8 @@ export default function CorsoBodybuildingPage() {
 					<span className="text-[var(--primary)]">Bodybuilding</span>
 				</h1>
 				<p className="text-xl text-neutral-300 mb-8 max-w-3xl mx-auto">
-					Il corso più completo in italiano per diventare un esperto di bodybuilding. 
-					10 moduli specializzati, oltre 25 ore di contenuti e tutto quello che serve per eccellere.
+					Il corso più completo per diventare un esperto di bodybuilding. 
+					10 moduli specializzati, risorse pratiche con esempi e materiale scaricabile.
 				</p>
 				
 				{/* Stats rapide */}
@@ -144,7 +144,7 @@ export default function CorsoBodybuildingPage() {
 						return (
 							<div key={module.id} className="group bg-neutral-900 rounded-2xl p-6 border border-neutral-800 hover:border-[var(--primary)]/30 transition-all duration-300">
 								<div className="flex items-start gap-4">
-									<div className="bg-[var(--primary)]/10 rounded-xl w-12 h-12 flex items-center justify-center flex-shrink-0 group-hover:bg-[var(--primary)]/20 transition-colors">
+									<div className="bg-[var(--primary)]/10 rounded-xl w-12 h-12 flex items-center justify-center flex-shrink-0 transition-colors">
 										<IconComponent className="text-[var(--primary)]" size={24} />
 									</div>
 									<div className="flex-1">
@@ -207,10 +207,6 @@ export default function CorsoBodybuildingPage() {
 						</div>
 					</div>
 				</div>
-				
-				<p className="text-neutral-400 text-sm">
-					Garanzia soddisfatti o rimborsati entro 30 giorni
-				</p>
 			</section>
 		</div>
 	);

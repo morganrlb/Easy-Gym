@@ -80,13 +80,13 @@ export default function SchedaBasePage() {
           </ul>
           <p className="price text-white text-3xl font-bold mb-4">24€</p>
           <LiquidGlassButton 
-            href="https://forms.gle/your-base-form-link" 
+            href="https://morganrealbuto.gumroad.com/l/lhaafh" 
             target="_blank" 
             variant="primary"
           >
-            Compila il Modulo<sup>*</sup>
+            Acquista Ora<sup>*</sup>
           </LiquidGlassButton>
-          <p className="text-neutral-400 text-sm mt-4"><sup>*</sup> Nessun obbligo di pagamento immediato. Il pagamento verrà richiesto via email dopo la compilazione del modulo.</p>
+          <p className="text-neutral-400 text-sm mt-4"><sup>*</sup> Eseguito il pagamento, sarà subito disponibile la scheda e i PDF con consigli su esercizi e dieta.</p>
         </div>
       </section>
     </div>
