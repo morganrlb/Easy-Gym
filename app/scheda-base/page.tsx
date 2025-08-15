@@ -51,7 +51,7 @@ export default function SchedaBasePage() {
       </section>
 
       <section className="max-w-3xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {benefits.map((benefit) => {
             const IconComponent = benefit.icon;
             return (

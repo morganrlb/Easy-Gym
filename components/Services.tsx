@@ -33,7 +33,7 @@ const services = [
 
 export default function Services() {
    return (
-      <section id="services" className="max-w-6xl mx-auto mb-40">
+      <section id="services" className="max-w-6xl mx-auto mb-40 px-4 md:px-0">
          <div className="text-center mb-12">
             <h2 className="text-[40px] font-bold mb-4 text-white">
                I Miei Servizi di Coaching
@@ -74,6 +74,19 @@ export default function Services() {
                   </div>
                </div>
             ))}
+         </div>
+         
+         <div className="text-center mt-8">
+            <p className="text-sm text-neutral-400">
+               Consulta la{" "}
+               <a 
+                  href="/about" 
+                  className="text-[var(--primary)] hover:underline"
+               >
+                  guida all'acquisto
+               </a>
+               {" "}per tutti i chiarimenti su come svolgere l'acquisto
+            </p>
          </div>
       </section>
    )

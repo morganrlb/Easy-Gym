@@ -83,7 +83,7 @@ export default function CorsoBodybuildingPage() {
 				</p>
 				
 				{/* Stats rapide */}
-				<div className="grid grid-cols-3 gap-4 max-w-lg mx-auto mb-8">
+				<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-lg mx-auto mb-8">
 					<div className="bg-neutral-900 rounded-xl p-4 border border-neutral-800">
 						<div className="text-2xl font-bold text-[var(--primary)] mb-1">10</div>
 						<div className="text-xs text-neutral-400">Moduli</div>
@@ -117,7 +117,7 @@ export default function CorsoBodybuildingPage() {
 					</p>
 					
 					{/* Cosa ottieni integrato */}
-					<div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
 						{[
 							{ icon: BookOpen, title: "10 Moduli", desc: "Contenuti specializzati" },
 							{ icon: FileText, title: "PDF Completi", desc: "Materiale scaricabile" },
@@ -138,7 +138,7 @@ export default function CorsoBodybuildingPage() {
 					</div>
 				</div>
 				
-				<div className="grid md:grid-cols-2 gap-6">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					{courseModules.map((module, index) => {
 						const IconComponent = module.icon;
 						return (

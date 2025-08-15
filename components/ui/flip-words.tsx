@@ -1,6 +1,6 @@
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, LayoutGroup } from "motion/react";
+import React, { useCallback, useEffect, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const FlipWords = ({
@@ -14,6 +14,21 @@ export const FlipWords = ({
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    // Controlla se è mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   // thanks for the fix Julian - https://github.com/Julian-AT
   const startAnimation = useCallback(() => {
@@ -23,11 +38,20 @@ export const FlipWords = ({
   }, [currentWord, words]);
 
   useEffect(() => {
-    if (!isAnimating)
+    if (!isAnimating && !isMobile && isMounted)
       setTimeout(() => {
         startAnimation();
       }, duration);
-  }, [isAnimating, duration, startAnimation]);
+  }, [isAnimating, duration, startAnimation, isMobile, isMounted]);
+
+  // Render statico per mobile o prima del mount
+  if (!isMounted || isMobile) {
+    return (
+      <span className={cn("inline-block text-[var(--primary)]", className)}>
+        {words[0]}
+      </span>
+    );
+  }
 
   return (
     <AnimatePresence
@@ -55,7 +79,7 @@ export const FlipWords = ({
           x: 40,
           filter: "blur(8px)",
           scale: 2,
-          position: "absolute"
+          position: "absolute",
         }}
         className={cn(
           "inline-block relative text-left px-2 text-[var(--primary)]",
